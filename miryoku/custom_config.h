@@ -16,7 +16,7 @@
 // &kp GRAVE,         &kp N1,            &kp N2,            &kp N3,            &kp BSLH,          U_NA,              &u_to_U_NUM,       &u_to_U_NAV,       &kp RALT,          U_NA,              \
 // U_NP,              U_NP,              &kp DOT,           &kp N0,            &kp MINUS,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
-// Graphite: https://github.com/rdavison/graphite-layout
+// My modification of Graphite: https://github.com/rdavison/graphite-layout
 #define MIRYOKU_LAYER_BASE \
 &kp B,             &kp L,             &kp D,             &kp W,             &kp Z,             &kp SQT,             &kp F,             &kp O,             &kp U,             &kp J,           \
 U_MT(LGUI, N),     U_MT(LALT, R),     U_MT(LCTRL, T),    U_MT(LSHFT, S),    &kp G,             &kp Y,             U_MT(LSHFT, H),    U_MT(LCTRL, A),    U_MT(LALT, E),     U_MT(LGUI, I),     \
