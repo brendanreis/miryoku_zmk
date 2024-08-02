@@ -5,9 +5,9 @@
 
 name: 'My Workflow - Build for Chocofi'
 on: 
-  workflow_dispatch:
   push:
-    branches: [master]
+  pull_request:
+  workflow_dispatch:
 jobs:
   build:
     uses: ./.github/workflows/main.yml
