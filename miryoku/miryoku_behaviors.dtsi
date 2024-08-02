@@ -7,14 +7,16 @@
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <U_TAPPING_TERM>;
-      flavor = "tap-preferred";
+      // require-prior-idle-ms = <U_REQUIRE_PRIOR_IDLE>;
+      flavor = "balanced";
       bindings = <&kp>, <&kp>;
     };
     u_lt: u_lt {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <U_TAPPING_TERM>;
-      flavor = "tap-preferred";
+      // require-prior-idle-ms = <U_REQUIRE_PRIOR_IDLE>;
+      flavor = "balanced";
       bindings = <&mo>, <&kp>;
     };
   };

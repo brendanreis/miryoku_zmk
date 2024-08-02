@@ -4,6 +4,7 @@
 #define MIRYOKU_CLIPBOARD_WIN
 #define MIRYOKU_TAP_QWERTY
 #define U_TAPPING_TERM 100
+// #define U_REQUIRE_PRIOR_IDLE 60
 
 // Gallium: https://github.com/GalileoBlues/Gallium
 // #define MIRYOKU_LAYER_BASE \
