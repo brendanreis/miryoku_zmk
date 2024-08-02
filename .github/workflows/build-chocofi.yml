@@ -2,7 +2,10 @@
 # https://github.com/manna-harbour/miryoku
 
 name: 'My Workflow - Build for Chocofi'
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+  push:
+    branches: [main]
 jobs:
   build:
     uses: ./.github/workflows/main.yml
