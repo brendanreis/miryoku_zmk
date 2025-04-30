@@ -38,13 +38,13 @@
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
       bindings = <&kp LSHFT>, <&kp ESC>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
+      mods = <(MOD_RSFT)>;
     };
     rshift_del: right_shift_del{
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp LSHFT>, <&kp DEL>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
+      bindings = <&kp RSHFT>, <&kp DEL>;
+      mods = <(MOD_LSFT)>;
     };
   };
 };
