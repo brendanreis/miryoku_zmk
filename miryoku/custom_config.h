@@ -25,7 +25,7 @@
 &kp B,             &kp L,             &kp D,             &kp W,             &kp Z,             &kp SQT,             &kp F,             &kp O,             &kp U,             &kp J,           \
 U_MT_L(LCTRL, N),     U_MT_L(LALT, R),     U_MT_L(LGUI, T),    U_MT_L(LSHFT, S),    &kp G,             &kp Y,             U_LT(U_FUN, H),    U_MT_R(LGUI, A),    U_MT_R(LALT, E),     U_MT_R(LCTRL, I),     \
 U_LT(U_BUTTON, Q), U_MT_L(RALT, X),     &kp M,             &kp C,             &kp V,             &kp K,             &kp P,             &kp COMMA,         U_MT_R(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
-U_NP,              U_NP,              U_LT(U_MEDIA, BSPC), U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  &rshift_esc, U_LT(U_FUN, DEL),  U_NP,              U_NP
+U_NP,              U_NP,              U_LT(U_MEDIA, BSPC), U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  &rshift_esc, U_LT(U_NUM, DEL),  U_NP,              U_NP
 
 // Based on https://github.com/manna-harbour/miryoku/discussions/313
 #define MIRYOKU_LAYER_EXTRA \
