@@ -37,13 +37,13 @@
     rshift_esc: rshift_esc {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
-        bindings = <&sk_rshift 0>, <&kp ESC>;
+        bindings = <&sk_rshift RSHFT>, <&kp ESC>;
         mods = <(MOD_LSFT)>;
     };
-    sk_rshift: sk_rshift {
+    sk: sk {
         compatible = "zmk,behavior-sticky-key";
         #binding-cells = <1>;
-        bindings = <&kp RSHFT>;
+        bindings = <&kp>;
         release-after-ms = <1000>;
         quick-release;
     };
