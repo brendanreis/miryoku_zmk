@@ -9,7 +9,7 @@
 // My modification of Graphite: https://github.com/rdavison/graphite-layout
 #define MIRYOKU_LAYER_BASE \
 &kp B,             &kp L,             &kp D,            &kp W,               &kp Z,              &kp SQT,           &kp F,             &kp O,             &kp U,             &kp J,                \
-U_MT(LCTRL, N),    U_MT(LALT, R),     U_MT(LGUI, T),    U_LT(U_MEDIA, S)     &kp G,              &kp Y,             U_LT(U_FUN, H)     U_MT(LGUI, A),     U_MT(LALT, E),     U_MT(LCTRL, I),       \
+U_MT(LCTRL, N),    U_MT(LALT, R),     U_MT(LGUI, T),    U_LT(U_MEDIA, S),    &kp G,              &kp Y,             U_LT(U_FUN, H).    U_MT(LGUI, A),     U_MT(LALT, E),     U_MT(LCTRL, I),       \
 U_LT(U_BUTTON, Q), U_MT(RALT, X),     &kp M,            &kp C,               &kp V,              &kp K,             &kp P,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
 U_NP,              U_NP,              U_LT(U_NAV, ESC), U_MT(LSHIFT, SPACE), U_LT(U_MOUSE, TAB), U_LT(U_SYM, RET),  U_MT(LSHFT, BSPC), U_LT(U_NUM, DEL),  U_NP,              U_NP
 
