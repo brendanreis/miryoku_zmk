@@ -37,7 +37,7 @@
     rshift_esc: rshift_esc {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
-        bindings = <&sk_rshift>, <&kp ESC>;
+        bindings = <&sk_rshift 0>, <&kp ESC>;
         mods = <(MOD_LSFT)>;
     };
     sk_rshift: sk_rshift {
