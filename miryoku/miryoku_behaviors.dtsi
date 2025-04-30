@@ -11,6 +11,14 @@
       flavor = "balanced";
       bindings = <&kp>, <&kp>;
     };
+    u_st: u_st {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <U_TAPPING_TERM>;
+      // require-prior-idle-ms = <U_REQUIRE_PRIOR_IDLE>;
+      flavor = "hold-preferred";
+      bindings = <&kp>, <&kp>;
+    };
     u_lt: u_lt {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
