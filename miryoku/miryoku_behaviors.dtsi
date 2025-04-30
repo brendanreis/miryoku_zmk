@@ -3,21 +3,49 @@
 
 / {
   behaviors {
-    u_mt: u_mt {
+    u_mt_r: u_mt_r {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <U_TAPPING_TERM>;
-      // require-prior-idle-ms = <U_REQUIRE_PRIOR_IDLE>;
+      quick-tap-ms = <U_QUICK_TAP>;
+      require-prior-idle-ms = <U_REQUIRE_PRIOR_IDLE>;
       flavor = "balanced";
       bindings = <&kp>, <&kp>;
+      hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
+      hold-trigger-on-release;
+    };
+    u_mt_l: u_mt_l {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <U_TAPPING_TERM>;
+      quick-tap-ms = <U_QUICK_TAP>;
+      require-prior-idle-ms = <U_REQUIRE_PRIOR_IDLE>;
+      flavor = "balanced";
+      bindings = <&kp>, <&kp>;
+      hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
+      hold-trigger-on-release;
     };
     u_lt: u_lt {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <U_TAPPING_TERM>;
-      // require-prior-idle-ms = <U_REQUIRE_PRIOR_IDLE>;
+      quick-tap-ms = <U_QUICK_TAP>;
+      require-prior-idle-ms = <U_REQUIRE_PRIOR_IDLE>;
       flavor = "balanced";
       bindings = <&mo>, <&kp>;
+    };
+    rshift_esc: rshift_esc {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&u_sk RSHFT>, <&kp ESC>;
+        mods = <(MOD_LSFT)>;
+    };
+    u_sk: u_sk {
+        compatible = "zmk,behavior-sticky-key";
+        #binding-cells = <1>;
+        bindings = <&kp>;
+        release-after-ms = <1000>;
+        quick-release;
     };
   };
 };

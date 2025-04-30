@@ -3,15 +3,29 @@
 
 #define MIRYOKU_CLIPBOARD_WIN
 #define MIRYOKU_TAP_QWERTY
-#define U_TAPPING_TERM 100
-// #define U_REQUIRE_PRIOR_IDLE 60
+#define U_TAPPING_TERM 280
+#define U_QUICK_TAP 175
+#define U_REQUIRE_PRIOR_IDLE 150
+
+#define LEFT_HAND_KEYS      \
+0  1  2  3  4               \
+10 11 12 13 14              \
+20 21 22 23 24 25           
+
+#define RIGHT_HAND_KEYS     \
+                            5  6  7  8  9   \
+                             16 17 18 19 20 \
+                             26 27 28 29 30
+
+#define THUMB_KEYS          \
+              31 32 32    34 35 36          
 
 // My modification of Graphite: https://github.com/rdavison/graphite-layout
 #define MIRYOKU_LAYER_BASE \
 &kp B,             &kp L,             &kp D,             &kp W,             &kp Z,             &kp SQT,             &kp F,             &kp O,             &kp U,             &kp J,           \
-U_MT(LCTRL, N),     U_MT(LALT, R),     U_MT(LGUI, T),    U_MT(LSHFT, S),    &kp G,             &kp Y,             U_MT(LSHFT, H),    U_MT(LGUI, A),    U_MT(LALT, E),     U_MT(LCTRL, I),     \
-U_LT(U_BUTTON, Q), U_MT(RALT, X),     &kp M,             &kp C,             &kp V,             &kp K,             &kp P,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
-U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
+U_MT_L(LCTRL, N),     U_MT_L(LALT, R),     U_MT_L(LGUI, T),    U_MT_L(LSHFT, S),    &kp G,             &kp Y,             U_LT(U_FUN, H),    U_MT_R(LGUI, A),    U_MT_R(LALT, E),     U_MT_R(LCTRL, I),     \
+U_LT(U_BUTTON, Q), U_MT_L(RALT, X),     &kp M,             &kp C,             &kp V,             &kp K,             &kp P,             &kp COMMA,         U_MT_R(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
+U_NP,              U_NP,              U_LT(U_MEDIA, BSPC), U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  &rshift_esc, U_LT(U_NUM, DEL),  U_NP,              U_NP
 
 // Based on https://github.com/manna-harbour/miryoku/discussions/313
 #define MIRYOKU_LAYER_EXTRA \
