@@ -10,14 +10,15 @@
 #define LEFT_HAND_KEYS      \
 0  1  2  3  4               \
 10 11 12 13 14              \
-20 21 22 23 24 25           \
+20 21 22 23 24 25           
 
 #define RIGHT_HAND_KEYS     \
                             5  6  7  8  9   \
                              16 17 18 19 20 \
-                             26 27 28 29 30 \
+                             26 27 28 29 30
+
 #define THUMB_KEYS          \
-              31 32 32    34 35 36          \
+              31 32 32    34 35 36          
 
 // My modification of Graphite: https://github.com/rdavison/graphite-layout
 #define MIRYOKU_LAYER_BASE \
