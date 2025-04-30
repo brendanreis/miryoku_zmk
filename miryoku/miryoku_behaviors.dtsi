@@ -34,17 +34,18 @@
       flavor = "balanced";
       bindings = <&mo>, <&kp>;
     };
-    lshift_esc: left_shift_esc{
-      compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
-      bindings = <&kp LSHFT>, <&kp ESC>;
-      mods = <(MOD_RSFT)>;
+    rshift_esc: rshift_esc {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&sk_rshift>, <&kp ESC>;
+        mods = <(MOD_LSFT)>;
     };
-    rshift_del: right_shift_del{
-      compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
-      bindings = <&kp RSHFT>, <&kp DEL>;
-      mods = <(MOD_LSFT)>;
+    sk_rshift: sk_rshift {
+        compatible = "zmk,behavior-sticky-key";
+        #binding-cells = <0>;
+        bindings = <&kp RSHFT>;
+        release-after-ms = <1000>;
+        quick-release;
     };
   };
 };
